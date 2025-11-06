@@ -5,7 +5,6 @@ namespace MyFirstGame
 {
     public abstract class Enemy
     {
-        // MonoGame visual properties
         public Texture2D Texture { get; protected set; }
         public Vector2 Position { get; protected set; }
 
