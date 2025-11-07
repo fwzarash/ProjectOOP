@@ -1,0 +1,68 @@
+1. The Collision Specialist (Core Systems)
+    Your Mission: Make things hit each other. This is the highest priority.
+    Tasks:
+        In GameManager.Update(), write a loop that checks if any Projectile in the projectiles list is touching any Enemy in the currentLevel.Enemies list.
+        If a projectile hits an enemy:
+            Call projectile.OnHit() to deactivate it.
+            Call enemy.TakeDamage(projectile.Damage).
+            Write another loop that checks if any Enemy is touching the player.
+        If an enemy hits the player:
+            Call player.TakeDamage(10) (or some damage value).
+        (Optional) Call enemy.TakeDamage(100) to make the enemy die on impact.
+    Files You'll Edit: GameManager.cs
+
+2. The UI & Game State Specialist (Menus)
+    Your Mission: Build the MainMenu and GameOver screens.
+    Tasks:
+        In GameManager.Update(), add if statements for CurrentState. If MainMenu or GameOver, stop updating the player and level.
+        In GameManager.Draw(), add else if blocks. If MainMenu, draw "Press START" text. If GameOver, draw "GAME OVER" text.
+        In GameManager.Update(), add logic to change the state.
+        If CurrentState == MainMenu and the player presses "Enter," set CurrentState = GameState.Playing.
+        If player.HP <= 0, set CurrentState = GameState.GameOver.
+    Files You'll Edit: GameManager.cs
+
+3. The Player & Power-Up Specialist (The "Feel")
+    Your Mission: Make the player feel responsive and fun.
+    Tasks:
+        Implement the player's TakeDamage logic. Make the player flash or become invincible for a second after being hit.
+        Implement the PowerUp.Apply() logic. You've already done this by adding AddHealth and UpgradeWeapon to the Player class.
+        Add logic to PowerUp.cs so it moves. Give it an Update() method and make it fall down the screen, similar to AlienScout.  
+    Files You'll Edit: Player.cs, PowerUp.cs
+
+4. The Enemy AI Specialist (The "Challenge")Your* Mission: Make the enemies fight back.
+    Tasks:
+        Go to GameManager.cs. Just like you have a projectiles list for the player, add a new enemyProjectiles list.
+        Modify the AlienFighter.Update() method. Add a timer (like the boss has ). When the timer is ready, make the AlienFighter shoot a new Projectile.
+        Make sure to add the new enemy projectile to the enemyProjectiles list in GameManager so it can be updated and drawn.
+        The Collision Specialist will need to add logic to check if enemyProjectiles hit the player.
+    Files You'll Edit: AlienFighter.cs, GameManager.cs
+
+5. The Level & Progression Specialist (The "Game")
+    Your Mission: Turn the single level into a full game experience.
+    Tasks:
+        In GameManager.Update(), add a check: if (currentLevel.IsComplete).
+        If the level is complete, increment currentLevelIndex, and call levels[currentLevelIndex].Load()  to spawn the next wave.
+        Open Level.cs and create Level 3. Add new AlienFighter and AlienScout enemies in interesting patterns.
+        In Enemy.TakeDamage(), when an enemy's HP goes to 0, add code to spawn a PowerUp. (e.g., if (randomNumber == 1) { gameManager.SpawnPowerUp(this.Position); }). This will require passing the GameManager to the enemy.
+    Files You'll Edit: GameManager.cs, Level.cs, Enemy.cs
+
+*6. The Audio Engineer (The "Vibe")*
+    Your Mission: Make the game sound alive.
+    Tasks:
+        Create a new class: AudioManager.cs.
+        Find .wav files for: shoot, enemy_hit, player_hit, explosion.
+        In AudioManager, load these sounds (as SoundEffect) just like you load textures.
+        Create public methods like PlayShootSound(), PlayExplosionSound().
+        In GameManager, when the player shoots, call audioManager.PlayShootSound().
+        In Enemy.TakeDamage, when HP goes to 0, call audioManager.PlayExplosionSound().
+    Files You'll Edit: AudioManager.cs (new), GameManager.cs, Enemy.cs
+
+7. The Art Director (The "Look")
+    Your Mission: Replace all placeholder squares with final art.
+    Tasks:
+        Create .png files with transparent backgrounds for: player_ship, alien_scout, alien_fighter, boss_alien_dragon, player_bullet, enemy_bullet, powerup_health.
+        Add all these images to the Content.mgcb file and build it.
+        Go to GameManager.LoadContent(), uncomment your Content.Load lines, and load the real textures.
+        Go to Player.cs, Enemy.cs, and Projectile.cs and remove the Color.Green, Color.Red, Color.Yellow from their Draw methods  so they use their natural colors.
+        Adjust the Size property in each class to match the size of your new images.
+    Files You'll Edit: Content.mgcb, GameManager.cs, Player.cs, Enemy.cs, Projectile.cs
