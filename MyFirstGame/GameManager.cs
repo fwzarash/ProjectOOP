@@ -94,14 +94,50 @@ namespace MyFirstGame
                 // 2. Update Current Level (which updates all enemies)
                 Level currentLevel = levels[currentLevelIndex];
                 currentLevel.Update(gameTime, player);
-                
+
                 // 3. Update Projectiles (pass graphicsDevice as fixed)
-                foreach (var p in projectiles) 
-                { 
-                    p.Update(gameTime, this.graphicsDevice); 
+                foreach (var p in projectiles)
+                {
+                    p.Update(gameTime, this.graphicsDevice);
                 }
 
-                // 4. (Collision detection logic would go here)
+                // 4. Collision detection logic
+                // Level currentLevel = levels[currentLevelIndex];
+
+                // --- Projectile vs Enemy ---
+                foreach (var projectile in projectiles)
+                {
+                    if (!projectile.IsActive)
+                        continue;
+
+                    foreach (var enemy in currentLevel.Enemies)
+                    {
+                        if (!enemy.IsActive)
+                            continue;
+
+                        if (projectile.BoundingBox.Intersects(enemy.BoundingBox))
+                        {
+                            projectile.OnHit(); // deactivate the projectile
+                            enemy.TakeDamage(projectile.Damage);
+                        }
+                    }
+                }
+
+                // --- Enemy vs Player ---
+                foreach (var enemy in currentLevel.Enemies)
+                {
+                    if (enemy.IsActive && enemy.BoundingBox.Intersects(player.BoundingBox))
+                    {
+                        player.TakeDamage(10);       // player loses HP
+                        // optional instant enemy death
+                        // enemy.TakeDamage(100);
+                    }
+                }
+
+                // cleanup inactive stuff
+                projectiles.RemoveAll(p => !p.IsActive);
+                currentLevel.Enemies.RemoveAll(e => !e.IsActive);
+
                 
                 // 5. Check for game over
                 if (player.HP <= 0)

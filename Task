@@ -46,7 +46,7 @@
         In Enemy.TakeDamage(), when an enemy's HP goes to 0, add code to spawn a PowerUp. (e.g., if (randomNumber == 1) { gameManager.SpawnPowerUp(this.Position); }). This will require passing the GameManager to the enemy.
     Files You'll Edit: GameManager.cs, Level.cs, Enemy.cs
 
-*6. The Audio Engineer (The "Vibe")*
+6. The Audio Engineer (The "Vibe")
     Your Mission: Make the game sound alive.
     Tasks:
         Create a new class: AudioManager.cs.
