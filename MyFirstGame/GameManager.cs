@@ -31,7 +31,7 @@ namespace MyFirstGame
         private GraphicsDevice graphicsDevice;
 
         // Textures (Assets)
-        // private Texture2D playerTexture;
+        private Texture2D playerTexture;
         // private Texture2D projectileTexture;
         // private Texture2D scoutTexture;
         // private Texture2D fighterTexture;
@@ -53,20 +53,24 @@ namespace MyFirstGame
             this.graphicsDevice = graphicsDevice;
             
             // Load textures
-            // playerTexture = content.Load<Texture2D>("player_ship");
+            playerTexture = content.Load<Texture2D>("player_ship");
             // projectileTexture = content.Load<Texture2D>("bullet");
             // scoutTexture = content.Load<Texture2D>("alien_scout");
             // fighterTexture = content.Load<Texture2D>("alien_fighter");
             // bossTexture = content.Load<Texture2D>("alien_dragon_boss");
+
             placeholderTexture = new Texture2D(graphicsDevice, 1, 1);
             placeholderTexture.SetData(new Color[] { Color.White });
 
+
+
             // Create player
-            Vector2 startPos = new Vector2(graphicsDevice.Viewport.Width / 2, graphicsDevice.Viewport.Height - 100);
+            // Vector2 startPos = new Vector2(graphicsDevice.Viewport.Width / 2, graphicsDevice.Viewport.Height - 100);
+            Vector2 startPos = new Vector2(0,0);
 
             // Use the 4-parameter constructor we fixed
             // player = new Player("Captain Affwaz", playerTexture, projectileTexture, startPos);
-            player = new Player("Captain Affwaz", placeholderTexture, placeholderTexture, startPos); 
+            player = new Player("Captain Affwaz", playerTexture, placeholderTexture, startPos); 
 
             // Create levels
             // levels.Add(new Level(1, scoutTexture, fighterTexture, bossTexture)); 

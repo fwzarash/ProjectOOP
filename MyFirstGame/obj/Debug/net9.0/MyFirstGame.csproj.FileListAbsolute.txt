@@ -32,3 +32,5 @@ C:\Users\zafirah\Downloads\monogame\MyFirstGame\obj\Debug\net9.0\MyFirstGame.pdb
 C:\Users\zafirah\Downloads\monogame\MyFirstGame\obj\Debug\net9.0\MyFirstGame.genruntimeconfig.cache
 C:\Users\zafirah\Downloads\monogame\MyFirstGame\obj\Debug\net9.0\ref\MyFirstGame.dll
 C:\Users\zafirah\Downloads\monogame\MyFirstGame\bin\Debug\net9.0\Content\UIFont.xnb
+C:\Users\zafirah\Downloads\monogame\MyFirstGame\bin\Debug\net9.0\Content\player_ship.xnb
+C:\Users\zafirah\Downloads\monogame\MyFirstGame\obj\Debug\net9.0\MyFirstGame.sourcelink.json

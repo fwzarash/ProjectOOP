@@ -4,8 +4,8 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
-    <File>C:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/player_ship.png</File>
-    <File>C:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/UIFont.spritefont</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/player_ship.png</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/UIFont.spritefont</File>
   </SourceFiles>
   <DestFiles>
     <File xsi:nil="true" />

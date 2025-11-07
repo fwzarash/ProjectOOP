@@ -44,7 +44,7 @@ namespace MyFirstGame
         {
             get
             {
-                return new Rectangle((int)Position.X, (int)Position.Y, (int)Size.X, (int)Size.Y);
+                return new Rectangle((int)Position.X, (int)Position.Y, Texture.Width, Texture.Height);
             }
         }
 
@@ -80,8 +80,9 @@ namespace MyFirstGame
             Rectangle destinationRectangle = new Rectangle((int)Position.X, (int)Position.Y, (int)Size.X, (int)Size.Y);
             spriteBatch.Draw(
                 this.Texture,
-                destinationRectangle,
-                Color.Green
+                this.Position,
+                // destinationRectangle,
+                Color.White
             );
         }
 

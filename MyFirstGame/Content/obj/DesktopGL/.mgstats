@@ -1,1 +1,3 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/player_ship.png","c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/bin/DesktopGL/player_ship.xnb","TextureProcessor","Texture2DContent",118647,999577,0.1848091
+"c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/UIFont.spritefont","c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/bin/DesktopGL/UIFont.xnb","FontDescriptionProcessor","SpriteFontContent",488,37913,0.0910297
