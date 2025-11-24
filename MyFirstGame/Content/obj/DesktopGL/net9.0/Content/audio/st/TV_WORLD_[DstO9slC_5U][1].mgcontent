@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/st/TV_WORLD_[DstO9slC_5U][1].mp3</SourceFile>
+  <SourceTime>2025-11-23T18:56:50.723225+08:00</SourceTime>
+  <DestFile>C:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/bin/DesktopGL/Content/audio/st/TV_WORLD_[DstO9slC_5U][1].xnb</DestFile>
+  <DestTime>2025-11-23T19:18:12.0683886+08:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2025-10-20T22:25:32+08:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2025-10-20T22:25:32+08:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>C:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/bin/DesktopGL/Content/audio/st/TV_WORLD_[DstO9slC_5U][1].ogg</string>
+  </BuildOutput>
+</PipelineBuildEvent>

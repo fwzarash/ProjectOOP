@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>C:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/st/Danimal_Cannon_-_Strike_The_Earth_-_Just_Shapes_and_Beats_[-5L8ttPkjEs][1].mp3</SourceFile>
+  <SourceTime>2025-11-23T19:00:17.6949207+08:00</SourceTime>
+  <DestFile>C:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/bin/DesktopGL/Content/audio/st/Danimal_Cannon_-_Strike_The_Earth_-_Just_Shapes_and_Beats_[-5L8ttPkjEs][1].xnb</DestFile>
+  <DestTime>2025-11-23T19:17:42.9636393+08:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2025-10-20T22:25:32+08:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2025-10-20T22:25:32+08:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>C:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/bin/DesktopGL/Content/audio/st/Danimal_Cannon_-_Strike_The_Earth_-_Just_Shapes_and_Beats_[-5L8ttPkjEs][1].ogg</string>
+  </BuildOutput>
+</PipelineBuildEvent>

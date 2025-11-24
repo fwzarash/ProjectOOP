@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/st/From_Now_On_(Battle_2)_[OobVFldn6As][1].mp3</SourceFile>
+  <SourceTime>2025-11-23T19:00:00.3462202+08:00</SourceTime>
+  <DestFile>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/bin/DesktopGL/audio/st/From_Now_On_(Battle_2)_[OobVFldn6As][1].xnb</DestFile>
+  <DestTime>2025-11-24T12:07:31.5231789+08:00</DestTime>
+  <Importer>Mp3Importer</Importer>
+  <ImporterTime>2025-10-20T22:25:32+08:00</ImporterTime>
+  <Processor>SongProcessor</Processor>
+  <ProcessorTime>2025-10-20T22:25:32+08:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput>
+    <string>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/bin/DesktopGL/audio/st/From_Now_On_(Battle_2)_[OobVFldn6As][1].ogg</string>
+  </BuildOutput>
+</PipelineBuildEvent>

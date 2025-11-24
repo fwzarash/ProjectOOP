@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/mus_explosion.wav</SourceFile>
+  <SourceTime>2025-11-23T19:15:09.2426101+08:00</SourceTime>
+  <DestFile>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/bin/DesktopGL/audio/sfx/mus_explosion.xnb</DestFile>
+  <DestTime>2025-11-24T12:06:35.6102077+08:00</DestTime>
+  <Importer>WavImporter</Importer>
+  <ImporterTime>2025-10-20T22:25:32+08:00</ImporterTime>
+  <Processor>SoundEffectProcessor</Processor>
+  <ProcessorTime>2025-10-20T22:25:32+08:00</ProcessorTime>
+  <Parameters>
+    <Key>Quality</Key>
+    <Value>Best</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

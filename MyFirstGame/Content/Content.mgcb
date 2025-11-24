@@ -13,6 +13,246 @@
 
 #---------------------------------- Content ---------------------------------#
 
+#begin alien_boss_dragon.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:alien_boss_dragon.png
+
+#begin alien_fighter.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:alien_fighter.png
+
+#begin alien_scout.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:alien_scout.png
+
+#begin audio/sfx/mus_explosion.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/mus_explosion.wav
+
+#begin audio/sfx/mus_f_laugh.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/mus_f_laugh.wav
+
+#begin audio/sfx/mus_f_newlaugh_low.ogg
+/importer:OggImporter
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/mus_f_newlaugh_low.ogg
+
+#begin audio/sfx/mus_sfx_a_target.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/mus_sfx_a_target.wav
+
+#begin audio/sfx/mus_sfx_hypergoner_laugh.ogg
+/importer:OggImporter
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/mus_sfx_hypergoner_laugh.ogg
+
+#begin audio/sfx/mus_sfx_rainbowbeam_1.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/mus_sfx_rainbowbeam_1.wav
+
+#begin audio/sfx/snd_b.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/snd_b.wav
+
+#begin audio/sfx/snd_bomb.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/snd_bomb.wav
+
+#begin audio/sfx/snd_bombfall.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/snd_bombfall.wav
+
+#begin audio/sfx/snd_bombsplosion.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/snd_bombsplosion.wav
+
+#begin audio/sfx/snd_heal_c.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/snd_heal_c.wav
+
+#begin audio/sfx/snd_heartshot.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/snd_heartshot.wav
+
+#begin audio/sfx/snd_hurt1.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/snd_hurt1.wav
+
+#begin audio/sfx/snd_impact.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/snd_impact.wav
+
+#begin audio/sfx/snd_item.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/snd_item.wav
+
+#begin audio/sfx/snd_power.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/snd_power.wav
+
+#begin audio/sfx/snd_reload.mp3
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/snd_reload.mp3
+
+#begin audio/sfx/snd_select.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/snd_select.wav
+
+#begin audio/sfx/snd_squeak.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:audio/sfx/snd_squeak.wav
+
+#begin audio/st/Altars_of_Apostasy_[m5ra-w1xct8][1].mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:audio/st/Altars_of_Apostasy_[m5ra-w1xct8][1].mp3
+
+#begin audio/st/caffeine_rush_[mYU9dTyDUnY][1].mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:audio/st/caffeine_rush_[mYU9dTyDUnY][1].mp3
+
+#begin audio/st/csfmdbitfb._[lt7ZA5-Mzzw][1].mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:audio/st/csfmdbitfb._[lt7ZA5-Mzzw][1].mp3
+
+#begin audio/st/Danimal_Cannon_-_Strike_The_Earth_-_Just_Shapes_and_Beats_[-5L8ttPkjEs][1].mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:audio/st/Danimal_Cannon_-_Strike_The_Earth_-_Just_Shapes_and_Beats_[-5L8ttPkjEs][1].mp3
+
+#begin audio/st/From_Now_On_(Battle_2)_[OobVFldn6As][1].mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:audio/st/From_Now_On_(Battle_2)_[OobVFldn6As][1].mp3
+
+#begin audio/st/Gathers_Under_Night..._[J8pBhDfERGk][1].mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:audio/st/Gathers_Under_Night..._[J8pBhDfERGk][1].mp3
+
+#begin audio/st/mus_core[1].ogg
+/importer:OggImporter
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:audio/st/mus_core[1].ogg
+
+#begin audio/st/mus_mettaton_ex[1].ogg
+/importer:OggImporter
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:audio/st/mus_mettaton_ex[1].ogg
+
+#begin audio/st/Order_[9E0xFvFCUTM][1].mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:audio/st/Order_[9E0xFvFCUTM][1].mp3
+
+#begin audio/st/Pandemonium_[qOlU6Lsmvvs][1].mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:audio/st/Pandemonium_[qOlU6Lsmvvs][1].mp3
+
+#begin audio/st/Tetra_[8LbfNt4v3Ws][1].mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:audio/st/Tetra_[8LbfNt4v3Ws][1].mp3
+
+#begin audio/st/TURBULENCE_[Jmq9rNu5PbQ][1].mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:audio/st/TURBULENCE_[Jmq9rNu5PbQ][1].mp3
+
+#begin audio/st/TV_WORLD_[DstO9slC_5U][1].mp3
+/importer:Mp3Importer
+/processor:SongProcessor
+/processorParam:Quality=Best
+/build:audio/st/TV_WORLD_[DstO9slC_5U][1].mp3
+
+#begin bullet.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:bullet.png
+
 #begin player_ship.png
 /importer:TextureImporter
 /processor:TextureProcessor
@@ -24,6 +264,36 @@
 /processorParam:MakeSquare=False
 /processorParam:TextureFormat=Color
 /build:player_ship.png
+
+#begin powerup_heart.png
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:powerup_heart.png
+
+#begin sci-fi-charge-up-37395.mp3
+/importer:Mp3Importer
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:sci-fi-charge-up-37395.mp3
+
+#begin space_background.jpg
+/importer:TextureImporter
+/processor:TextureProcessor
+/processorParam:ColorKeyColor=255,0,255,255
+/processorParam:ColorKeyEnabled=True
+/processorParam:GenerateMipmaps=False
+/processorParam:PremultiplyAlpha=True
+/processorParam:ResizeToPowerOfTwo=False
+/processorParam:MakeSquare=False
+/processorParam:TextureFormat=Color
+/build:space_background.jpg
 
 #begin UIFont.spritefont
 /importer:FontDescriptionImporter

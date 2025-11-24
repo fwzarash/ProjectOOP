@@ -4,10 +4,88 @@
   <Platform>DesktopGL</Platform>
   <Config />
   <SourceFiles>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/alien_boss_dragon.png</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/alien_fighter.png</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/alien_scout.png</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/mus_explosion.wav</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/mus_f_laugh.wav</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/mus_f_newlaugh_low.ogg</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/mus_sfx_a_target.wav</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/mus_sfx_hypergoner_laugh.ogg</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/mus_sfx_rainbowbeam_1.wav</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/snd_b.wav</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/snd_bomb.wav</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/snd_bombfall.wav</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/snd_bombsplosion.wav</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/snd_heal_c.wav</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/snd_heartshot.wav</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/snd_hurt1.wav</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/snd_impact.wav</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/snd_item.wav</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/snd_power.wav</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/snd_reload.mp3</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/snd_select.wav</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/sfx/snd_squeak.wav</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/st/Altars_of_Apostasy_[m5ra-w1xct8][1].mp3</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/st/caffeine_rush_[mYU9dTyDUnY][1].mp3</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/st/csfmdbitfb._[lt7ZA5-Mzzw][1].mp3</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/st/Danimal_Cannon_-_Strike_The_Earth_-_Just_Shapes_and_Beats_[-5L8ttPkjEs][1].mp3</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/st/From_Now_On_(Battle_2)_[OobVFldn6As][1].mp3</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/st/Gathers_Under_Night..._[J8pBhDfERGk][1].mp3</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/st/mus_core[1].ogg</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/st/mus_mettaton_ex[1].ogg</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/st/Order_[9E0xFvFCUTM][1].mp3</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/st/Pandemonium_[qOlU6Lsmvvs][1].mp3</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/st/Tetra_[8LbfNt4v3Ws][1].mp3</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/st/TURBULENCE_[Jmq9rNu5PbQ][1].mp3</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/audio/st/TV_WORLD_[DstO9slC_5U][1].mp3</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/bullet.png</File>
     <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/player_ship.png</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/powerup_heart.png</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/sci-fi-charge-up-37395.mp3</File>
+    <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/space_background.jpg</File>
     <File>c:/Users/zafirah/Downloads/monogame/MyFirstGame/Content/UIFont.spritefont</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
