@@ -16,13 +16,18 @@ namespace MyFirstGame
 
         public Game1()
         {
-            // This line fixes your "No Graphics Device Service" error
             _graphics = new GraphicsDeviceManager(this);
-            
+    
+            // --- CHANGE THESE NUMBERS TO RESIZE THE WINDOW ---
+            _graphics.PreferredBackBufferWidth = 800;
+            _graphics.PreferredBackBufferHeight = 1000;
+            // _graphics.IsFullScreen = true;
+            _graphics.ApplyChanges();
+            // -------------------------------------------------
+
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
             
-            // Create the one and only instance of your GameManager
             gameManager = new GameManager();
         }
 

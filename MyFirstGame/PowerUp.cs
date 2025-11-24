@@ -1,3 +1,4 @@
+using System.Runtime.CompilerServices;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -20,6 +21,7 @@ namespace MyFirstGame
         // Attributes from your design
         private PowerUpType type;
         private int value;
+        private float speed = 2.0f ; // Speed for falling motion
 
         public bool IsActive { get; set; }
         
@@ -44,7 +46,12 @@ namespace MyFirstGame
         /// <summary>
         /// Applies the power-up effect to the player.
         /// </summary>
-        public void Apply(Player player) // 
+        
+        public void Update(GameTime gameTime)
+        {
+            Position = new Vector2(Position.X, Position.Y + speed);
+        }
+        public void Apply(Player player)
         {
             switch (type)
             {
@@ -66,10 +73,24 @@ namespace MyFirstGame
         /// </summary>
         public void Draw(SpriteBatch spriteBatch)
         {
+            Color colorTint = Color.White;
+            if (this.type == PowerUpType.Health)
+            {
+                colorTint = Color.LimeGreen;
+
+            }
+            else if (this.type == PowerUpType.WeaponUpgrade)
+            {
+                colorTint = Color.Gold; 
+            }
+            else if (this.type == PowerUpType.Shield)
+            {
+                colorTint = Color.Blue; // Blue tint for shield power up 
+            }
             spriteBatch.Draw(
                 this.Texture,
                 this.Position,
-                Color.White
+                colorTint
             );
         }
     }
