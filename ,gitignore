@@ -10,7 +10,7 @@
 *.userprefs
 
 # --- MonoGame Content Builder ---
-# We keep the source images, but ignore the built .xnb files
+# Keep the source images, but ignore the built .xnb files
 Content/bin/
 Content/obj/
 
