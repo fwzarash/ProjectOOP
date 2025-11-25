@@ -34,7 +34,7 @@ namespace MyFirstGame
         {
             base.Update(gameTime, player);
             
-            // --- Entry Logic ---
+            // Entry Logic
             // Force the boss to slowly descend until it is fully on screen (Y = 50)
             if (Position.Y < hoverHeight)
             {
@@ -70,7 +70,7 @@ namespace MyFirstGame
                 Position = new Vector2(newX, hoverHeight);
             }
 
-            // --- Attack Logic ---
+            // Attack Logic
             attackTimer += gameTime.ElapsedGameTime.TotalSeconds;
 
             if (attackTimer > 2.0)
@@ -111,7 +111,7 @@ namespace MyFirstGame
 
         public void SpecialAttack(Player player)
         {
-            // Logic: "Ring of Death" - Spawn 12 bullets in a circle
+            // Spawn 12 bullets in a circle
             Vector2 origin = new Vector2(Position.X + Size.X / 2, Position.Y + Size.Y / 2);
             int numberOfBullets = 12;
 

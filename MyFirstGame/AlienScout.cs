@@ -33,7 +33,7 @@ namespace MyFirstGame
         {
             base.Update(gameTime, player); 
             
-            // --- Zig-Zag Movement (Sine Wave) ---
+            // Zig-Zag Movement (Sine Wave)
             float time = (float)gameTime.TotalGameTime.TotalSeconds;
             float xOffset = (float)Math.Sin(time * waveFrequency) * waveAmplitude;
             float newX = Position.X + xOffset;
@@ -42,7 +42,7 @@ namespace MyFirstGame
             newX = MathHelper.Clamp(newX, 0, gameManager.ScreenWidth - Size.X);
             Position = new Vector2(newX, Position.Y + speed);
 
-            // --- Shooting Logic ---
+            // Shooting Logic
             shootTimer += (float)gameTime.ElapsedGameTime.TotalSeconds;
             if (shootTimer >= shootInterval)
             {

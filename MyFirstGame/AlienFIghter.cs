@@ -30,7 +30,7 @@ namespace MyFirstGame
             float newX = MathHelper.Clamp(Position.X, 0, 800 - Size.X);
             Position = new Vector2(newX, Position.Y + speed);
 
-            // --- Shooting Logic ---
+            // Shooting Logic
             shootCooldown -= (float)gameTime.ElapsedGameTime.TotalSeconds;
             if (shootCooldown <= 0f)
             {

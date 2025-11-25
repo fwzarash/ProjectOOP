@@ -19,12 +19,12 @@ namespace MyFirstGame
 
     public class GameManager
     {
-        // --- Core Systems ---
+        // Core Systems
         public GameState CurrentState { get; private set; }
         private GraphicsDevice graphicsDevice;
         private Random random = new Random();
         
-        // --- Entities & Lists ---
+        // Entities & Lists
         private Player player;
         private List<Level> levels;
         private List<Projectile> projectiles;
@@ -32,7 +32,7 @@ namespace MyFirstGame
         public List<Projectile> EnemyProjectile { get { return enemyProjectiles; } }
         public List<PowerUp> powerUps = new List<PowerUp>();
         
-        // --- Assets ---
+        // Assets
         private Texture2D playerTexture;
         private Texture2D projectileTexture;
         public Texture2D EnemyProjectileTexture { get; private set; }
@@ -44,7 +44,7 @@ namespace MyFirstGame
         private Texture2D placeholderTexture; // For Health bars
         private SpriteFont uiFont;
 
-        // --- Audio ---
+        // Audio
         private List<Song> levelSongs;
         private SoundEffect shootSound;
         private SoundEffect hurtSound;
@@ -52,14 +52,14 @@ namespace MyFirstGame
         private SoundEffect pressStart;
         private SoundEffect reloadSound;
         
-        // --- Audio Transition Logic ---
+        // Audio Transition Logic
         private bool isTransitioning = false;
         private int nextLevelIndex = -1;
         private float fadeSpeed = 1.0f; 
         private float maxVolume = 0.3f; 
         private bool isFadingOut = false;
 
-        // --- Level & Environment ---
+        // Level & Environment
         private float _backgroundScrollY = 0f;
         private int currentLevelIndex;
         public int ScreenWidth { get { return graphicsDevice.Viewport.Width; } }
@@ -155,7 +155,7 @@ namespace MyFirstGame
             return current.IsKeyDown(key) && !previousKeyboardState.IsKeyDown(key);
         }
 
-        // --- Music Management ---
+        // Music Management
         private void PlayLevelMusic(int levelIndex)
         {
             if (levelSongs == null || levelIndex >= levelSongs.Count) return;
@@ -224,7 +224,7 @@ namespace MyFirstGame
 
         public void Update(GameTime gameTime)
         {
-            // --- Music Transitions ---
+            // Music Transitions
             if (isTransitioning)
             {
                 float timePassed = (float)gameTime.ElapsedGameTime.TotalSeconds;
@@ -254,13 +254,13 @@ namespace MyFirstGame
                 }
             }
 
-            // --- Background Parallax ---
+            // Background Parallax
             _backgroundScrollY += 50f * (float)gameTime.ElapsedGameTime.TotalSeconds;
             if (_backgroundScrollY >= graphicsDevice.Viewport.Height) _backgroundScrollY = 0;
 
             KeyboardState kState = Keyboard.GetState();
 
-            // --- State Machine ---
+            // State Machine
             switch (CurrentState)
             {
                 case GameState.MainMenu:
@@ -389,13 +389,13 @@ namespace MyFirstGame
             int screenWidth = graphicsDevice.Viewport.Width;
             int screenHeight = graphicsDevice.Viewport.Height;
 
-            // --- Draw Infinite Scrolling Background ---
+            // Draw Infinite Scrolling Background
             // Draw first instance
             spriteBatch.Draw(backgroundTexture, new Rectangle(0, (int)_backgroundScrollY, screenWidth, screenHeight), Color.White);
             // Draw second instance immediately above it
             spriteBatch.Draw(backgroundTexture, new Rectangle(0, (int)_backgroundScrollY - screenHeight, screenWidth, screenHeight), Color.White);
 
-            // --- Draw UI based on State ---
+            // Draw UI based on State
             if (CurrentState == GameState.MainMenu)
             {
                 DrawCenteredText(spriteBatch, "SPACE SHOOTER\nPress ENTER to Start", Color.White);

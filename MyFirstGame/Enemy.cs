@@ -5,26 +5,24 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace MyFirstGame
 {
-    // ==========================================
-    // BASE ENEMY CLASS
-    // ==========================================
+    // Base Enemy Class
     public abstract class Enemy
     {
         protected GameManager gameManager;
         private static Random random = new Random();
 
-        // --- Visuals & Stats ---
+        // Visuals & Stats
         public Texture2D Texture { get; protected set; }
         public string Name { get; private set; }
         public int HP { get; private set; }
         public bool IsActive { get; set; }
         
-        // --- Position & Movement ---
+        // Position & Movement
         public Vector2 Position { get; protected set; }
         public Vector2 Size { get; protected set; }
         protected float speed;
 
-        // --- Combat State ---
+        // Combat State
         protected float flashTimer = 0f; // For hit feedback
         protected List<Projectile> enemyProjectiles;
         protected float hitboxMargin = 0.15f; // Default 15% shrink for small enemies

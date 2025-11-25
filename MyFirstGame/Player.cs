@@ -7,7 +7,7 @@ namespace MyFirstGame
 {
     public class Player
     {
-        // --- Visuals & Position ---
+        // Visuals & Position
         public Texture2D Texture { get; private set; }
         public string Name { get; private set; }
         private Vector2 position;
@@ -15,12 +15,12 @@ namespace MyFirstGame
         public Vector2 Size { get; private set; }
         private Color playerColor = Color.White;
 
-        // --- Stats & Combat ---
+        // Stats & Combat
         private int hp;
         public int HP { get { return hp; } }
         private float speed;
         
-        // --- Weapon System ---
+        // Weapon System
         private Texture2D projectileTexture;
         private float projectileSpeed;
         private float shootCooldown;
@@ -29,12 +29,12 @@ namespace MyFirstGame
         public int WeaponLevel { get { return weaponLevel; } }
         public bool IsShooting { get; private set; } = false;
 
-        // --- Ammo System ---
+        // Ammo System
         public int MaxAmmo { get; private set; } = 30; 
         public int CurrentAmmo { get; private set; }
         private SoundEffect _reloadSfx;
 
-        // --- Invincibility & Shield ---
+        // Invincibility & Shield
         private bool isInvincible;
         private float invincibilityTimer = 0f;
         private const float INVINCIBILITY_DURATION = 1.0f; // Duration of invulnerability after hit
@@ -89,13 +89,13 @@ namespace MyFirstGame
         {
             float deltaTime = (float)gameTime.ElapsedGameTime.TotalSeconds;
 
-            // --- Cooldown Management ---
+            // Cooldown Management
             if (shootCooldown > 0)
             {
                 shootCooldown -= deltaTime;
             }
 
-            // --- Invincibility Logic ---
+            // Invincibility Logic
             if (isInvincible)
             {
                 invincibilityTimer -= deltaTime; 
@@ -125,7 +125,7 @@ namespace MyFirstGame
                 }
             }
 
-            // --- Movement Logic ---
+            // Movement Logic
             KeyboardState kState = Keyboard.GetState();
             Vector2 direction = Vector2.Zero;
 
@@ -140,7 +140,7 @@ namespace MyFirstGame
             position.X = MathHelper.Clamp(position.X, 0, screenBounds.Width - Size.X);
             position.Y = MathHelper.Clamp(position.Y, 0, screenBounds.Height - Size.Y);
 
-            // --- Reload Logic ---
+            // Reload Logic
             if (kState.IsKeyDown(Keys.R) && CurrentAmmo < MaxAmmo)
             {
                 CurrentAmmo = MaxAmmo; 

@@ -15,7 +15,7 @@ namespace MyFirstGame
         private Texture2D bossTexture;
         private GameManager gameManager;
 
-        // --- Level Completion Logic ---
+        // Level Completion Logic
         // Ensure we don't complete the level before enemies have actually spawned
         private bool hasEnemiesSpawned = false;
         public bool IsComplete 
@@ -46,10 +46,7 @@ namespace MyFirstGame
 
             System.Random rng = new System.Random();
 
-            // ====================================================
-            // LEVEL CONFIGURATIONS
-            // ====================================================
-            
+            // LEVEL CONFIGURATIONS            
             // Level 1: Outer Orbit (Easy - Scouts Only)
             if (LevelNumber == 1)
             {
