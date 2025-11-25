@@ -1,10 +1,8 @@
-using System.Runtime.CompilerServices;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace MyFirstGame
 {
-    // The enum from your design
     public enum PowerUpType
     {
         Health,
@@ -14,17 +12,14 @@ namespace MyFirstGame
 
     public class PowerUp
     {
-        // Visuals
         public Texture2D Texture { get; private set; }
         public Vector2 Position { get; private set; }
+        public bool IsActive { get; set; }
 
-        // Attributes from your design
         private PowerUpType type;
         private int value;
-        private float speed = 2.0f ; // Speed for falling motion
+        private float speed = 2.0f; // Falling speed
 
-        public bool IsActive { get; set; }
-        
         public Rectangle BoundingBox
         {
             get
@@ -33,7 +28,6 @@ namespace MyFirstGame
             }
         }
 
-        // Constructor
         public PowerUp(Texture2D texture, Vector2 position, PowerUpType type, int value)
         {
             this.Texture = texture;
@@ -42,15 +36,12 @@ namespace MyFirstGame
             this.value = value;
             this.IsActive = true;
         }
-
-        /// <summary>
-        /// Applies the power-up effect to the player.
-        /// </summary>
         
         public void Update(GameTime gameTime)
         {
             Position = new Vector2(Position.X, Position.Y + speed);
         }
+
         public void Apply(Player player)
         {
             switch (type)
@@ -62,36 +53,31 @@ namespace MyFirstGame
                     player.UpgradeWeapon(value);
                     break;
                 case PowerUpType.Shield:
-                    // player.ActivateShield(value);
+                    player.ActivateShield();
                     break;
             }
-            this.IsActive = false; // Deactivate after collection
+            this.IsActive = false; // Destroy after collection
         }
 
-        /// <summary>
-        /// Draws the power-up to the screen.
-        /// </summary>
         public void Draw(SpriteBatch spriteBatch)
         {
+            // Tint based on type for visual distinction
             Color colorTint = Color.White;
-            if (this.type == PowerUpType.Health)
+            
+            switch (type)
             {
-                colorTint = Color.LimeGreen;
+                case PowerUpType.Health:
+                    colorTint = Color.LimeGreen;
+                    break;
+                case PowerUpType.WeaponUpgrade:
+                    colorTint = Color.Gold;
+                    break;
+                case PowerUpType.Shield:
+                    colorTint = Color.Blue;
+                    break;
+            }
 
-            }
-            else if (this.type == PowerUpType.WeaponUpgrade)
-            {
-                colorTint = Color.Gold; 
-            }
-            else if (this.type == PowerUpType.Shield)
-            {
-                colorTint = Color.Blue; // Blue tint for shield power up 
-            }
-            spriteBatch.Draw(
-                this.Texture,
-                this.Position,
-                colorTint
-            );
+            spriteBatch.Draw(Texture, Position, colorTint);
         }
     }
 }

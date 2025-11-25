@@ -6,24 +6,20 @@ namespace MyFirstGame
 {
     public class Game1 : Game
     {
-        // This is required for MonoGame to access the graphics card
         private GraphicsDeviceManager _graphics; 
-        
         private SpriteBatch _spriteBatch;
 
-        // This is the *instance* of your logic class
+        // The logic manager for the game
         private GameManager gameManager;
 
         public Game1()
         {
             _graphics = new GraphicsDeviceManager(this);
     
-            // --- CHANGE THESE NUMBERS TO RESIZE THE WINDOW ---
+            // Screen Resolution Settings
             _graphics.PreferredBackBufferWidth = 800;
             _graphics.PreferredBackBufferHeight = 1000;
-            // _graphics.IsFullScreen = true;
             _graphics.ApplyChanges();
-            // -------------------------------------------------
 
             Content.RootDirectory = "Content";
             IsMouseVisible = true;
@@ -36,40 +32,32 @@ namespace MyFirstGame
             base.Initialize();
         }
 
-        // This signature is correct: override, no parameters
         protected override void LoadContent()
         {
             _spriteBatch = new SpriteBatch(GraphicsDevice);
 
-            // Pass the MonoGame Content and GraphicsDevice to your manager
+            // Pass Content and GraphicsDevice to the GameManager to load assets
             gameManager.LoadContent(this.Content, this.GraphicsDevice);
         }
 
-        // This signature is correct: override, GameTime parameter
         protected override void Update(GameTime gameTime)
         {
+            // Exit functionality
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed || Keyboard.GetState().IsKeyDown(Keys.Escape))
                 Exit();
 
-            // Tell your game manager to update its logic
+            // Delegate update logic to GameManager
             gameManager.Update(gameTime);
 
             base.Update(gameTime);
         }
 
-        // This signature is correct: override, GameTime parameter
         protected override void Draw(GameTime gameTime)
         {
-            // Change background to Black for a space shooter
             GraphicsDevice.Clear(Color.Black);
 
-            // Begin the sprite batch
             _spriteBatch.Begin();
-            
-            // Tell your game manager to draw everything
             gameManager.Draw(_spriteBatch);
-            
-            // End the sprite batch
             _spriteBatch.End();
 
             base.Draw(gameTime);
